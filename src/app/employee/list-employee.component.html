@@ -1,0 +1,38 @@
+<p>
+  list-employee works!
+</p>
+
+<div class="col-md-6">
+  <h2> Employee Details</h2>
+  <button class="btn btn-danger" (click)="addEmployee()"> Add </button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>FirstName</th>
+      <th>Email</th>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Deptid</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let emp of emps">
+      <td>{{emp.fullName}}</td>
+      <td>{{emp.email}}</td>
+      <td>{{emp.id}}</td>
+      <td>{{emp.name}}</td>
+      <td>{{emp.deptid}}</td>
+      <td><button class="btn btn-danger" (click)="deleteEmployee(emp)"> Delete</button>
+      <td><button class="btn btn-danger" (click)="editEmployee(emp)" style="margin-left: 20px;"> Edit</button></td>  
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Modal -->
+
+
+
+
+	
